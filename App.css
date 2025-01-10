@@ -1,0 +1,147 @@
+:root {
+    --text-primary: #f4f4f4; 
+    --bgPrimary: #9a9abd; 
+    --bgSecondary: #a3a3db; 
+    --pink: #ff6f61; 
+    --light-blue: #86c6f4; 
+    --border: #afa5a5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: var(--pink) !important;
+}
+
+.app {
+    display: flex;
+    overflow: hidden;
+    background-color: var(--bgPrimary);
+    color: var(--text-primary);
+}
+
+.navbar {
+    flex: 0.2;
+    background-color: var(--bgSecondary);
+}
+
+.main {
+    flex: 0.8;
+    width: 100%;
+}
+
+.routes {
+    padding: 20px;
+    color: var(--text-primary);
+}
+
+.nav-container {
+    position: fixed;
+    left: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--bgSecondary);
+}
+
+.logo-container {
+    background-color: var(--bgPrimary);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo a {
+    color: var(--pink);
+}
+
+.menu-control-container {
+    background-color: var(--bgSecondary) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Loader */
+.loader {
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgPrimary);
+}
+
+/* Crypto Card Styling */
+.crypto-card {
+    background-color: var(--bgSecondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.crypto-card .crypto-image {
+    width: 40px;
+}
+
+.crypto-card:hover {
+    background-color: var(--pink);
+    color: var(--text-primary);
+    transform: scale(1.05);
+}
+
+
+.coin-detail-container {
+    margin: 30px;
+    background-color: var(--bgSecondary);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.coin-heading-container {
+    color: var(--pink);
+}
+
+.coin-stats {
+    background-color: var(--bgPrimary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.coin-stats:hover {
+    background-color: var(--pink);
+    color: var(--text-primary);
+}
+
+
+.footer {
+    background-color: var(--bgPrimary);
+    color: var(--text-primary);
+    text-align: center;
+}
+
+
+.chart-header {
+    color: var(--pink);
+}
+
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+
+    .main {
+        flex: 1;
+        margin-top: 60px;
+    }
+
+    .nav-container {
+        height: 8vh;
+        width: 100%;
+        background-color: var(--bgSecondary);
+    }
+}
